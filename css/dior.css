@@ -76,12 +76,12 @@ nav .nav-btn img {
 	width: 30px;
 }
 nav .nav-con{
-	width: 100%;
+	width: 100%; 
 }
 nav .nav-con ul li{
 	width: 100%; color: #f2f2f2; font-size: 1.8rem; padding: 4%; box-sizing: border-box;
 	font-family: 'Nanum Gothic', sans-serif;
-
+	
 }
 nav .nav-con ul li:first-of-type{
 	text-align: center; border-bottom: 1px solid #545454;
@@ -90,7 +90,7 @@ nav .nav-con ul li:first-of-type{
 nav .nav-con ul li:last-of-type{ border-bottom: 1px solid #545454;
 }
 nav .b-con{
-	width: 100%;
+	width: 100%; 
 }
 nav .b-con ul li span{
 	color: #f2f2f2; font-size: 1.8rem; font-weight: 300;
@@ -257,15 +257,15 @@ nav .b-con ul li img{
 }
 .f-wrap .b-con .swiper-container .swiper-slide .f-btn{
 	position: relative; bottom: 53px;width: 40%; left: 50%; transform: translateX(-50%); background-color: #08021b; border-radius: 20px; cursor: pointer; padding: 2% 0;
-
+	
 }
 .f-wrap .b-con .swiper-container .swiper-slide .f-btn p{
 	padding-left: 15%;
 	font-size: 1.8rem; color: #e5dada; display: inline-block;
-
+	
 }
 .f-wrap .b-con .swiper-container .swiper-slide .f-btn img{
-	width: 10%;
+	width: 10%; 
 }
 .f-wrap .b-con .swiper-container .swiper-slide img {
 	width: 80%;
@@ -437,7 +437,13 @@ nav .b-con ul li img{
 }
 
 .w-wrap .slick-slider {
-	display: none;
+/*	display: none;*/
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.w-wrap .open{
+	height: auto;
 }
 
 .w-wrap .slick-slider .slide-bottom {
@@ -568,7 +574,13 @@ width: 100%; margin: 0 auto;
 }
 
 .m-wrap .slick-slider {
-	display: none;
+display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.m-wrap .open{
+	height: auto;
 }
 
 .m-wrap .slick-slider .slide-bottom {
@@ -682,23 +694,23 @@ width: 100%; margin: 0 auto;
 	background: url("../images/dior/footer/info_icon_store.png") no-repeat right;
 	cursor: pointer;
 	border-right: 1px solid #000;
-	width: 15%; border: 0; border-radius: 0 25px 25px 0;
+	width: 15%; border: 0; border-radius: 0 25px 25px 0; 
 	padding: 3.1%; right: 15%;
-
+	
 }
 footer{
 	margin-top: 30%;
 	width: 100%;background-color: #1b1b1b; overflow: hidden;
 }
 footer .top-btn{
-	width: 100%; padding: 3%; text-align: center; background-color: #000;
+	width: 100%; padding: 3%; text-align: center; background-color: #000; 
 }
 footer .top-btn span{
 	font-size: 1.8rem; color: #d8cece;
 	cursor: pointer;
 }
 footer .m-con{
-width: 100%;
+width: 100%; 
 }
 footer .m-con p,
 footer .m-con span{
@@ -706,14 +718,14 @@ footer .m-con span{
 }
 footer .m-con .top-txt{
 	position: relative;
-	width: 100%; padding: 10% 10% 0% 10%; box-sizing: border-box;
+	width: 100%; padding: 10% 10% 0% 10%; box-sizing: border-box; 
 	cursor: pointer;
 }
 footer .m-con .top-txt img{
 	float: left; margin-right: 5%; width: 6%
 }
 footer .m-con .top-txt p{
-	float: left;
+	float: left; 
 }
 footer .m-con .top-txt span{
 	float: right;
@@ -733,11 +745,11 @@ footer .m-con .bottom-txt span{
 	float: right;
 }
 footer .m-con .top-txt::after{
-	content: ""; position: absolute; width: 85%; height: 1px; background-color: #7c7c7c; left: 50%; transform: translateX(-50%);
+	content: ""; position: absolute; width: 85%; height: 1px; background-color: #7c7c7c; left: 50%; transform: translateX(-50%); 
 	bottom: -75%;
 }
 footer .m-con .bottom-txt::after{
-	content: ""; position: absolute; width: 85%; height: 1px; background-color: #7c7c7c; left: 50%; transform: translateX(-50%);
+	content: ""; position: absolute; width: 85%; height: 1px; background-color: #7c7c7c; left: 50%; transform: translateX(-50%); 
 	bottom: -30%;
 }
 footer .bottom-btn{
@@ -763,10 +775,10 @@ footer .bottom-btn ul li img{
 }
 footer .bottom-btn ul li span:nth-of-type(2){
 	position: absolute; right: 25%;
-	font-size: 2.5rem;
+	font-size: 2.5rem; 
 }
 footer .bottom-btn ul li::after{
-	content: ""; position: absolute; width: 70%; height: 1px; background-color: #7c7c7c; left: 7%;
+	content: ""; position: absolute; width: 70%; height: 1px; background-color: #7c7c7c; left: 7%; 
 	bottom:-50%;
 }
 @media screen and (max-width :360px) {
@@ -775,7 +787,7 @@ footer .bottom-btn ul li::after{
 	body {
 		font-size: 8px;
 	}
-
+	
 	.w-wrap .tab-btn ul li {
 	line-height: 65px;
 	width: 65px;
@@ -788,7 +800,7 @@ footer .bottom-btn ul li::after{
 	width: 65px;
 	margin-right: %;
 
-}
+}	
 	.w-wrap .tab-btn ul li {
 	line-height: 65px;
 	width: 65px;
@@ -801,7 +813,7 @@ footer .bottom-btn ul li::after{
 	width: 65px;
 	margin-right: %;
 
-}
+}	
 	.w-wrap .top-con p {
 	font-size: 1.6rem;
 	color: #1b1b1b;
@@ -826,5 +838,5 @@ footer .bottom-btn ul li::after{
 	border-radius:20px;
 }
 
-
+	
 }
