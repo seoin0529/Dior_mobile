@@ -2,14 +2,14 @@ $("document").ready(function(){
 	var $open_btn =$("header .btn-con"),
 		$close_btn=$("nav .nav-btn")
 		$nav =$("nav");
-
+	
 	$open_btn.click(function(){
 		$nav.fadeIn(500);
 	})//nav open
 	$close_btn.click(function(){
 		$nav.fadeOut(500);
 	})
-
+	
 	var swiper = new Swiper(".swiper-container",{
 		autoplay : {
 			delay :2500
@@ -25,13 +25,13 @@ $("document").ready(function(){
 			el:".swiper-pagination",
 			clickable : true
 		}
-
+		
 	})
-
+	
 	var $tab_btn =$(".f-wrap .tab-btn .btn"),
 		$tab_list =$(".f-wrap .b-con .swiper-container"),
 		$tab_txt =$(".f-wrap .b-con .txt-con");
-
+	
 	$tab_txt.eq(0).hide();
 	$tab_list.eq(1).hide();
 	$tab_btn.click(function(){
@@ -40,7 +40,8 @@ $("document").ready(function(){
 		$tab_list.hide().eq(i).show();
 		$tab_txt.hide().eq(i).show();
 	})
-
+	
+	
 	$('.slick-slider').slick({
  centerMode :true,
  autoplay:true,
@@ -61,38 +62,49 @@ dots : true,
     }
   ]
 });
-
+	
+	
 var $w_tab = $(".w-wrap .tab-btn ul li"),
-	$w_list =$(".w-wrap .slick-slider");
-
-	$w_list.hide().eq(0).show();
+	$w_list =$(".w-wrap .slick-slider"),
+	$list = [".bags", ".shoes", ".clothing",".makeup"];
+	
+//	$w_list.hide().eq(0).show();
+	$($list[0]).addClass("open");
 	$w_tab.removeClass("active").eq(0).addClass("active");
-
+	
 	$w_tab.click(function(){
 		a = $w_tab.index(this);
+//		alert(a)
 	$w_tab.removeClass("active").eq(a).addClass("active");
-	 $w_list.hide().eq(a).show();
+		$w_list.removeClass("open")
+		
+		$($list[a]).addClass("open");
+		
 	})
-
+ 	
 	var $m_tab = $(".m-wrap .tab-btn ul li"),
-	$m_list =$(".m-wrap .slick-slider");
-
-	$m_list.hide().eq(0).show();
+	$m_list =$(".m-wrap .slick-slider"),
+	$list = [".bags", ".shoes", ".clothing",".makeup"];
+	
+	$($list[0]).addClass("open");
 	$m_tab.removeClass("active").eq(0).addClass("active");
-
+	
 	$m_tab.click(function(){
 		a = $m_tab.index(this);
+//		alert(a)
 	$m_tab.removeClass("active").eq(a).addClass("active");
-	 $m_list.hide().eq(a).show();
+		$m_list.removeClass("open")
+		
+		$($list[a]).addClass("open");
 	})
 
  var top_btn =$("footer .top-btn span");
-
+	
 	$(top_btn).click(function(){
 		$("html, body").animate({scrollTop:0},500);
 		return false;
 	})
-
-
-
+	
+	
+	
 })//end
