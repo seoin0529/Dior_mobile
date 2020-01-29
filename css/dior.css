@@ -48,6 +48,7 @@ header .top-wrap .btn-con .btn {
 	display: block;
 	width: 35px;
 	height: 2px;
+	height: 2px;
 	background-color: #d0d0d1;
 	text-align: center;
 	box-sizing: border-box;
@@ -322,7 +323,9 @@ nav .b-con ul li img{
 	text-align: center;
 	margin-bottom: 2%;
 }
-.center .slick-slide .slide-bottom span:nth-of-type(2) {
+.center .slick-slide .slide-bottom span:nth-of-type(2),
+.center .slick-slide .slide-bottom span:nth-of-type(3)
+{
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -574,7 +577,7 @@ width: 100%; margin: 0 auto;
 }
 
 .m-wrap .slick-slider {
-display: block;
+/*display: none;*/
 	height: 0;
 	overflow: hidden;
 }
@@ -586,7 +589,9 @@ display: block;
 .m-wrap .slick-slider .slide-bottom {
 	position: relative;
 }
-
+.m-wrap .slick-slider .slide-bottom span:nth-child(1){
+	font-size: 1.8rem;
+}
 .m-wrap .slick-slider .slide-bottom span:nth-of-type(2) {
 	width: 35%;
 	position: absolute;
@@ -825,16 +830,18 @@ footer .bottom-btn ul li::after{
 	margin-bottom: 3%;
 	font-weight: bold;
 }
-	.m-wrap .slick-slider .slide-bottom span:nth-of-type(2) {
-	width: 50%;
-	padding: 4%;
-	border-radius:20px;
-}
+
 	.w-wrap .slick-slider .slide-bottom span:nth-of-type(2) {
 	width: 50%;
 	padding: 4%;
 	border-radius:20px;
 }
+	.w-wrap .slick-slider .slide-bottom span:nth-of-type(1){
+		font-size: 1.6rem;
+	}
+	.m-wrap .slick-slider .slide-bottom span:nth-of-type(1){
+		font-size: 1.6rem;
+	}
 
 	
 }
