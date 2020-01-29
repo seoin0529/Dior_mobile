@@ -66,10 +66,10 @@ dots : true,
 	
 var $w_tab = $(".w-wrap .tab-btn ul li"),
 	$w_list =$(".w-wrap .slick-slider"),
-	$list = [".bags", ".shoes", ".clothing",".makeup"];
+	$lists = [".bags", ".shoes", ".clothing",".makeup"];
 	
 //	$w_list.hide().eq(0).show();
-	$($list[0]).addClass("open");
+	$($lists[0]).addClass("open");
 	$w_tab.removeClass("active").eq(0).addClass("active");
 	
 	$w_tab.click(function(){
@@ -78,13 +78,13 @@ var $w_tab = $(".w-wrap .tab-btn ul li"),
 	$w_tab.removeClass("active").eq(a).addClass("active");
 		$w_list.removeClass("open")
 		
-		$($list[a]).addClass("open");
+		$($lists[a]).addClass("open");
 		
 	})
  	
 	var $m_tab = $(".m-wrap .tab-btn ul li"),
 	$m_list =$(".m-wrap .slick-slider"),
-	$list = [".bags", ".shoes", ".clothing",".makeup"];
+	$list = [".mbags", ".mshoes", ".mclothing",".mmakeup"];
 	
 	$($list[0]).addClass("open");
 	$m_tab.removeClass("active").eq(0).addClass("active");
